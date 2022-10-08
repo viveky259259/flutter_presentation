@@ -1,3 +1,4 @@
+import 'package:animated_website/pages/initial_stage.dart';
 import 'package:animated_website/pages/presentation_intro.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const PresentationIntroPage(),
+      debugShowCheckedModeBanner: false,
+      home: InitialStage(),
     );
   }
 }
