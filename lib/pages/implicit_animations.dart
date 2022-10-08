@@ -1,5 +1,6 @@
 import 'package:animated_website/model/app_config.dart';
 import 'package:animated_website/pages/content.dart';
+import 'package:animated_website/pages/quote.dart';
 import 'package:animated_website/pages/speaker_intro.dart';
 import 'package:animated_website/widgets/template/slide_template.dart';
 import 'package:flutter/material.dart';
@@ -37,7 +38,7 @@ class _ImplicitAnimationsState extends State<ImplicitAnimations> {
         },
         prev: () {
           Navigator.push(
-              context, MaterialPageRoute(builder: (_) => SpeakerIntroPage()));
+              context, MaterialPageRoute(builder: (_) => QuotePage()));
         },
         child: Center(
           child: Column(

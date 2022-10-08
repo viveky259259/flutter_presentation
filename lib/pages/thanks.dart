@@ -10,8 +10,9 @@ class ThanksPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(255, 241, 222, 1),
+      backgroundColor: const Color.fromRGBO(157, 197, 220, 1),
       body: SlideTemplate(
+        borderColor:const Color.fromRGBO(157, 197, 220, 1),
         next: () {},
         prev: () {
           Navigator.push(
@@ -21,7 +22,7 @@ class ThanksPage extends StatelessWidget {
           child: Stack(
             children: [
               Image.asset(
-                'asset/images/thanks.png',
+                'asset/images/thanks1.png',
                 fit: BoxFit.fitWidth,
               ),
               Lottie.asset('asset/lottie/confetti_alternative.json',

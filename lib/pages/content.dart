@@ -1,4 +1,5 @@
 import 'package:animated_website/common/text_styles.dart';
+import 'package:animated_website/pages/presentation_intro.dart';
 import 'package:animated_website/pages/speaker_intro.dart';
 import 'package:animated_website/pages/thanks.dart';
 import 'package:animated_website/widgets/template/slide_template.dart';
@@ -59,7 +60,7 @@ class _ContentPageState extends State<ContentPage>
           },
           prev: () {
             Navigator.push(
-                context, MaterialPageRoute(builder: (_) => SpeakerIntroPage()));
+                context, MaterialPageRoute(builder: (_) => ThanksPage())); 
           },
           child: Stack(
             children: [

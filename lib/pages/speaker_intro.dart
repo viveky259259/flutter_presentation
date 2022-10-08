@@ -2,9 +2,9 @@ import 'package:animated_website/common/text_styles.dart';
 import 'package:animated_website/model/app_config.dart';
 import 'package:animated_website/pages/implicit_animations.dart';
 import 'package:animated_website/pages/presentation_intro.dart';
+import 'package:animated_website/pages/quote.dart';
 import 'package:animated_website/widgets/template/slide_template.dart';
 import 'package:flutter/animation.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -84,7 +84,7 @@ class _SpeakerIntroPageState extends State<SpeakerIntroPage>
         body: SlideTemplate(
           next: () {
             Navigator.push(context,
-                MaterialPageRoute(builder: (_) => ImplicitAnimations()));
+                MaterialPageRoute(builder: (_) => QuotePage()));
           },
           prev: () {
             Navigator.push(context,
@@ -111,7 +111,7 @@ class _SpeakerIntroPageState extends State<SpeakerIntroPage>
                                 color: Colors.grey.shade300,
                               ),
                               Text(
-                                'Senior Mobile Dev @ZestMoney',
+                                'Mobile Team Lead @ZestMoney',
                                 style: CommonTextStyles.normal.copyWith(
                                     color: textColor,
                                     fontSize: 16 * (titleTween.value.dx / 20)),
@@ -171,7 +171,7 @@ class _SpeakerIntroPageState extends State<SpeakerIntroPage>
                           child: Column(
                             children: [
                               Text(
-                                '4+ Mobile Experience',
+                                '5+ Mobile Experience',
                                 style: CommonTextStyles.normaBold.copyWith(
                                     color: textColor,
                                     fontSize: 16 * (communityTween.value / 25)),
